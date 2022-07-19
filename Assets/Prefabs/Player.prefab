@@ -108,7 +108,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1539766911
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -205,7 +205,7 @@ MonoBehaviour:
   speed: 2
   maxHealth: 100
   currentHealth: 0
-  money: 0
+  money: 60
 --- !u!114 &5175758759737120726
 MonoBehaviour:
   m_ObjectHideFlags: 0
