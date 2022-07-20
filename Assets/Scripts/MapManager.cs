@@ -37,6 +37,14 @@ public class MapManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().maxHealth=AfterDeathManager.Load().health;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().speed=AfterDeathManager.Load().speed;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombact>().attackDamage=AfterDeathManager.Load().attack;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().money=0;
+        }
+        else
+        {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().maxHealth=100;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().speed=2f;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombact>().attackDamage=20;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManager>().money=0;
         }
     }
     public void LevelUp(){
