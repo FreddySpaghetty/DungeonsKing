@@ -11,7 +11,6 @@ public class AfterDeathManager
     {
         BinaryFormatter form = new BinaryFormatter();
         string path = Application.persistentDataPath + "/memory.card";
-        Debug.Log("YEEEEEEEEEEEEEEEEEEEEEEH   "+  path);
         FileStream stream = new FileStream(path,FileMode.Create);
         SaveDataStructure data = new SaveDataStructure(player,playercombact,scorescript);
         Debug.Log("att   "+  data.attack);
