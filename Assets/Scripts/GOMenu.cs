@@ -17,7 +17,6 @@ public class GOMenu : MonoBehaviour
         scoreText.text = score.ToString() + " POINTS";
         creditsText.text = credits.ToString() + " CREDITS";
         GameObject.Find("Player").SetActive(true);
-        print("Porcodio "+GameObject.Find("Player").GetComponent<PlayerManager>().maxHealth);
     }
 
     public void Restart()
